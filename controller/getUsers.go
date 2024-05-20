@@ -1,6 +1,18 @@
-package controller
+package controllers
 
-func getUsers(db *sql.DB) http.HandlerFunc {
+import (
+	"database/sql"
+	"encoding/json"
+	"net/http"
+)
+
+type User struct {
+	ID    int    `json:"id"`
+	Name  string `json:"name"`
+	Email string `json:"email"`
+}
+
+func GetUsers(db *sql.DB) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		rows, err := db.Query("SELECT * FROM users")
 		if err != nil {

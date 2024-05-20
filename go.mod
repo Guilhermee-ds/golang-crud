@@ -1,4 +1,4 @@
-module github.com/guilhermee-ds/go-crud
+module github.com/guilhermee-ds/golang-crud
 
 go 1.22.1
 
