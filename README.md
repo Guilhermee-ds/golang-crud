@@ -1,3 +1,7 @@
+# API COM DOCKER, GOLANG E POSTGRESQL
+
+Este projeto é uma API em GoLang, encapsulada em Docker para portabilidade e replicabilidade. Utiliza PostgreSQL para um armazenamento de dados robusto e eficiente. É uma solução poderosa e escalável.
+
 ## Dependencias
 
 - Docker
